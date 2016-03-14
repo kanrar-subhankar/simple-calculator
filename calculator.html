@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="calculator.css" type="text/css">
+	   <!-- <script src="calculator.js"></script>-->
+</head>
+<body>
+<h1 class="op">calculator</h1>
+<div id="border">
+<div id="internal">
+
+</div>
+<div>
+<input type="button" name="btn1" value="1" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button" name="btn2" value="2" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button" name="btn3" value="3" onclick="document.getElementById('input').innerHTML+=value"/>
+</div>
+<div>
+<input type="button" name="btn4" value="4" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button" name="btn5" value="5" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button" name="btn6" value="6" onclick="document.getElementById('input').innerHTML+=value"/>
+</div>
+<div>
+<input type="button" name="btn7" value="7" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button" name="btn8" value="8" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button" name="btn9" value="9" onclick="document.getElementById('input').innerHTML+=value"/>
+</div>
+<div>
+<input type="button" name="addbtn" value="+" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button"  name="subbtn" value="-" onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button"  name="multbtn" value="*"onclick="document.getElementById('input').innerHTML+=value"/>
+</div>
+<div>
+<input type="button"  name="divbtn" value="/"  onclick="document.getElementById('input').innerHTML+=value"/>
+<input type="button"  name="equbtn" value="=" onclick="document.getElementById('internal').innerHTML=eval(document.getElementById('input').innerHTML)"/>
+<input type="button"  name="btn0" value="0" onclick="document.getElementById('input').innerHTML+=value"/></div>
+<div>
+<input type="button"  name=" " value="c" onclick="document.getElementById('input').innerHTML=name"/>
+<input type="button" name="(" value="(" onclick="document.getElementById('input').innerHTML+=name"/>
+<input type="button" name=")" value=")" onclick="document.getElementById('input').innerHTML+=name"/>
+</div>
+<div id="input">
+</div>
+</div>
+<script type="text/javascript">
+	//function display(n1){
+	//	document.getElementById("input").innerHTML = n1;
+	//}
+
+</script>
+</body>
+</html>
